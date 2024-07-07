@@ -6,7 +6,9 @@ a = Analysis(
     ['hotkeys.py'],
     pathex=['.'],
     binaries=[],
-    datas=[('hotkeys.ico', '.')],  # Incluyendo el ícono en el análisis
+    datas=[
+        ('hotkeys.ico', '.')
+    ],
     hiddenimports=['pystray', 'PIL'],
     hookspath=[],
     runtime_hooks=[],
