@@ -76,7 +76,7 @@
  [],
  False,
  False,
- 1720387432,
+ 1720402240,
  [('runw.exe',
    'c:\\Users\\KillyVera\\Documents\\Code\\sniperpy\\.venv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',
    'EXECUTABLE')],

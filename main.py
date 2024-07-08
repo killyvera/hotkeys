@@ -5,6 +5,8 @@ import pystray
 from PIL import Image
 import json
 from config_window import show_config_window
+import tkinter as tk
+from tkinter import messagebox
 
 # Función para manejar la salida del programa
 def on_quit(icon, item):
@@ -56,6 +58,14 @@ def show_config_window_and_update(html_snippets, snippets_file):
         # Reconfigurar hotkeys con los snippets actualizados
         configure_hotkeys(html_snippets)
 
+# Función para mostrar la ventana de "About"
+def show_about_window():
+    about_message = "hotkeys app\nVer 1.0\n\n killydev.netlify"
+    root = tk.Tk()
+    root.withdraw()  # Ocultar la ventana principal de Tkinter
+    messagebox.showinfo("About", about_message)
+    root.destroy()
+
 # Obtener la ruta absoluta de AppData\Roaming para el archivo JSON
 app_data_dir = os.path.expanduser(os.path.join('~', 'AppData', 'Roaming', 'hotkeys'))
 print(f"Ruta de la carpeta hotkeys: {app_data_dir}")  # Imprimir la ruta antes de crear la carpeta
@@ -80,14 +90,20 @@ if __name__ == '__main__':
         icon_path = os.path.join(os.path.dirname(__file__), 'hotkeys.ico')
         icon = pystray.Icon("hotkeys")
         icon.icon = Image.open(icon_path)
-        icon.title = "hotkeys Ver0.1"
+        icon.title = "hotkeys"
         
-        # Añadir opción de configuración al menú de la bandeja del sistema
+        # Añadir opción de configuración y About al menú de la bandeja del sistema
         def open_config_window(icon, item):
             show_config_window_and_update(html_snippets, snippets_file)
         
-        icon.menu = pystray.Menu(pystray.MenuItem("Configuración", open_config_window),
-                                 pystray.MenuItem("Quit", on_quit))
+        def open_about_window(icon, item):
+            show_about_window()
+        
+        icon.menu = pystray.Menu(
+            pystray.MenuItem("Config", open_config_window),
+            pystray.MenuItem("About", open_about_window),
+            pystray.MenuItem("Quit", on_quit)
+        )
         
         icon.run()
     except KeyboardInterrupt:
