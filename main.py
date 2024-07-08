@@ -60,7 +60,7 @@ def show_config_window_and_update(html_snippets, snippets_file):
 
 # Función para mostrar la ventana de "About"
 def show_about_window():
-    about_message = "hotkeys app\nVer 1.0\n\n killydev.netlify"
+    about_message = "hotkeys app\nVersion 1.0\n\n killydev.netlify"
     root = tk.Tk()
     root.withdraw()  # Ocultar la ventana principal de Tkinter
     messagebox.showinfo("About", about_message)
