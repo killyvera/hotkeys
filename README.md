@@ -38,8 +38,9 @@ Welcome to **Hotkeys for Devs** - an efficient and customizable desktop applicat
     python main.py
     ```
 2. Explore the system tray icon:
-    - Right-click on the system tray icon to access Configuration Options and "About".
+    - Right-click on the system tray icon to access "Config" Options and "About".
     - Configure hotkeys and manage Code snippets as needed.
+    - Use Ctrl + Alt + Num|0-9| to use your custom text snippets.
 
 ## ⚙️ Configuration
 - **Initial Setup:** Customize Code snippets and their associated hotkeys in the `snippets.json` file.
