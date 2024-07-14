@@ -3,11 +3,12 @@
 block_cipher = None
 
 a = Analysis(
-    ['hotkeys.py'],
+    ['main.py'],
     pathex=['.'],
     binaries=[],
     datas=[
-        ('hotkeys.ico', '.')
+        ('hotkeys.ico', '.'),
+        ('hotkeys_black.ico', '.')
     ],
     hiddenimports=['pystray', 'PIL'],
     hookspath=[],
