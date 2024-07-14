@@ -58,7 +58,7 @@ Welcome to **Hotkeys for Devs** - an efficient and customizable desktop applicat
 This project is licensed under the MIT License.
 
 ## 🌟 Credits
-- Developed & Logo designed by killy.
+- Developed & Logo designed by killy
 
 ## 📧 Contact
 For issues, suggestions, or feedback, reach out to [david.esmeralda@gmail.com](mailto:david.esmeralda@gmail.com).
