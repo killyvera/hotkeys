@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, simpledialog
 import json
+import os
 
 class ConfigWindow:
     def __init__(self, parent, html_snippets, snippets_file):
@@ -12,6 +13,9 @@ class ConfigWindow:
     def setup_ui(self):
         self.parent.title("hotkeys Config")
         self.parent.geometry('400x300')
+
+        icon_path = 'hotkeys_black.ico'
+        self.parent.wm_iconbitmap(os.path.join(os.path.dirname(__file__), 'hotkeys_black.ico'))
 
         # Crear una tabla (Treeview) para mostrar los snippets y shortcuts
         self.tree = ttk.Treeview(self.parent, columns=('Snippet'))

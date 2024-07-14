@@ -5,6 +5,7 @@ import pystray
 from PIL import Image
 import json
 from config_window import show_config_window
+from about_window import show_about_window
 import tkinter as tk
 from tkinter import messagebox
 
@@ -59,12 +60,12 @@ def show_config_window_and_update(html_snippets, snippets_file):
         configure_hotkeys(html_snippets)
 
 # Función para mostrar la ventana de "About"
-def show_about_window():
-    about_message = "hotkeys app\nVersion 1.0\n\n killydev.netlify"
-    root = tk.Tk()
-    root.withdraw()  # Ocultar la ventana principal de Tkinter
-    messagebox.showinfo("About", about_message)
-    root.destroy()
+# def show_about_window():
+#     about_message = "hotkeys app\nVersion 1.0\n\n killydev.netlify"
+#     root = tk.Tk()
+#     root.withdraw()  # Ocultar la ventana principal de Tkinter
+#     messagebox.showinfo("About", about_message)
+#     root.destroy()
 
 # Obtener la ruta absoluta de AppData\Roaming para el archivo JSON
 app_data_dir = os.path.expanduser(os.path.join('~', 'AppData', 'Roaming', 'hotkeys'))
@@ -97,7 +98,7 @@ if __name__ == '__main__':
             show_config_window_and_update(html_snippets, snippets_file)
         
         def open_about_window(icon, item):
-            show_about_window()
+            show_about_window("hotkeys app\nVersion 1.0\n\n killydev.netlify")
         
         icon.menu = pystray.Menu(
             pystray.MenuItem("Config", open_config_window),
