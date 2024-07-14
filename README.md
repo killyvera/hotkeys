@@ -42,6 +42,10 @@ Welcome to **Hotkeys for Devs** - an efficient and customizable desktop applicat
     - Configure hotkeys and manage Code snippets as needed.
     - Use Ctrl + Alt + Num|0-9| to use your custom text snippets.
 
+<p align="center">
+  <img src="hotkeys_screen_00.jpeg" alt="Hotkeys Config Window" width="auto">
+</p>
+
 ## ⚙️ Configuration
 - **Initial Setup:** Customize Code snippets and their associated hotkeys in the `snippets.json` file.
 - **System Tray Configuration:** Learn how menu options are configured in `tray_icon.py`.
