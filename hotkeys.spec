@@ -8,7 +8,8 @@ a = Analysis(
     binaries=[],
     datas=[
         ('hotkeys.ico', '.'),
-        ('hotkeys_black.ico', '.')
+        ('hotkeys_black.ico', '.'),
+        ('hotkeys_black.png', '.')
     ],
     hiddenimports=['pystray', 'PIL'],
     hookspath=[],

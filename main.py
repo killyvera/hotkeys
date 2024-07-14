@@ -98,7 +98,9 @@ if __name__ == '__main__':
             show_config_window_and_update(html_snippets, snippets_file)
         
         def open_about_window(icon, item):
-            show_about_window("hotkeys app\nVersion 1.0\n\n killydev.netlify")
+            about_message = "Hotkeys for devs.\nVersion 1.0\nDeveloped by killy."
+            repo_link = "https://github.com/killyvera/hotkeys"
+            show_about_window(about_message, repo_link)
         
         icon.menu = pystray.Menu(
             pystray.MenuItem("Config", open_config_window),
