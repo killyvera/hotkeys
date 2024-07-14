@@ -1,6 +1,6 @@
 # 🌟 Hotkeys for Devs 🌟
 
-Welcome to **Hotkeys for Devs** - an efficient and customizable desktop application designed to help developers quickly insert HTML snippets using hotkeys. 🚀
+Welcome to **Hotkeys for Devs** - an efficient and customizable desktop application designed to help developers quickly insert custom snippets using hotkeys. 🚀
 
 ## 📋 Table of Contents
 - [Features](#-features)
@@ -13,7 +13,7 @@ Welcome to **Hotkeys for Devs** - an efficient and customizable desktop applicat
 - [Contact](#-contact)
 
 ## ✨ Features
-- 📚 **Customizable HTML Snippets:** Easily configure your HTML snippets.
+- 📚 **Customizable Code Snippets:** Easily configure your Code snippets.
 - 🔥 **Hotkey Integration:** Assign hotkeys for quick snippet insertion.
 - ⚙️ **System Tray Integration:** Access configuration and about options from the system tray.
 - 🖼️ **User-Friendly UI:** Simple and intuitive interface for managing snippets.
@@ -35,11 +35,11 @@ Welcome to **Hotkeys for Devs** - an efficient and customizable desktop applicat
     python main.py
     ```
 2. Explore the system tray icon:
-    - Right-click on the system tray icon to access configuration options and "About".
-    - Configure hotkeys and manage HTML snippets as needed.
+    - Right-click on the system tray icon to access Configuration Options and "About".
+    - Configure hotkeys and manage Code snippets as needed.
 
 ## ⚙️ Configuration
-- **Initial Setup:** Customize HTML snippets and their associated hotkeys in the `snippets.json` file.
+- **Initial Setup:** Customize Code snippets and their associated hotkeys in the `snippets.json` file.
 - **System Tray Configuration:** Learn how menu options are configured in `tray_icon.py`.
 
 ## 🤝 Contribution
@@ -50,11 +50,10 @@ Welcome to **Hotkeys for Devs** - an efficient and customizable desktop applicat
 This project is licensed under the MIT License.
 
 ## 🌟 Credits
-- Developed by Your Name
-- Logo designed by Designer Name
+- Developed & Logo designed by killy
 
 ## 📧 Contact
-For issues, suggestions, or feedback, reach out to [email@example.com](mailto:email@example.com).
+For issues, suggestions, or feedback, reach out to [david.esmeralda@gmail.com](mailto:david.esmeralda@gmail.com).
 
 ---
 
