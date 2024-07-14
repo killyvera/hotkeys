@@ -3,14 +3,14 @@
 Welcome to **Hotkeys for Devs** - an efficient and customizable desktop application designed to help developers quickly insert HTML snippets using hotkeys. 🚀
 
 ## 📋 Table of Contents
-- [Features](##features)
-- [Installation](##installation)
-- [Usage](##usage)
-- [Configuration](##configuration)
-- [Contribution](##contribution)
-- [License](##license)
-- [Credits](##credits)
-- [Contact](##contact)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Configuration](#-configuration)
+- [Contribution](#-contribution)
+- [License](#-license)
+- [Credits](#-credits)
+- [Contact](#-contact)
 
 ## ✨ Features
 - 📚 **Customizable HTML Snippets:** Easily configure your HTML snippets.
