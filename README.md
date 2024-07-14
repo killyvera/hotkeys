@@ -1,4 +1,7 @@
 # 🌟 Hotkeys for Devs 🌟
+<p align="center">
+  <img src="hotkeys.png" alt="Hotkeys for Devs Logo" width="200">
+</p>
 
 Welcome to **Hotkeys for Devs** - an efficient and customizable desktop application designed to help developers quickly insert custom snippets using hotkeys. 🚀
 
@@ -21,7 +24,7 @@ Welcome to **Hotkeys for Devs** - an efficient and customizable desktop applicat
 ## 📦 Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/hotkeys-for-devs.git
+    git clone https://github.com/killyvera/hotkeys.git
     cd hotkeys-for-devs
     ```
 2. Install dependencies:
