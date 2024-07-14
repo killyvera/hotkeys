@@ -39,6 +39,6 @@ This project is licensed under the MIT License.
 Developed by Your Name
 Logo designed by Designer Name
 📧 Contact
-For issues, suggestions, or feedback, reach out to email@example.com.
+For issues, suggestions, or feedback, reach out to david.esmeralda@gmail.com.
 
 Made with ❤️ and ☕️
