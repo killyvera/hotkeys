@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotkeys for Devs</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --light-bg-color: #72a3ff;
+            --light-text-color: #1a202c;
+            --light-accent-color: #e2e2e2;
+
+            --dark-bg-color: #1a202c;
+            --dark-text-color: #cbd5e0;
+            --dark-accent-color: #313d53;
+
+            --gray: #e6e6e6;
+            --gray-second: #313d53;
+        }
+
+        body.light-mode {
+            background-color: var(--light-bg-color);
+            color: var(--light-text-color);
+        }
+
+        body.light-mode nav#nav {
+            background-color: var(--gray);
+            color: var(--light-text-color);
+        }
+
+        body.light-mode section#features {
+            background-color: var(--gray);
+        }
+
+
+        body.dark-mode {
+            background-color: var(--dark-bg-color);
+            color: var(--dark-text-color);
+        }
+
+        body.dark-mode nav#nav {
+            background-color: var(--dark-accent-color);
+            color: var(--dark-text-color);
+        }
+
+        body.dark-mode section#features {
+            background-color: var(--gray-second);
+        }
+
+        .light-mode .bg-accent {
+            background-color: var(--light-accent-color);
+        }
+
+        .dark-mode .bg-accent {
+            background-color: var(--dark-accent-color);
+        }
+
+        /* Custom Switch Styles */
+        .theme-switch {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            background-color: #bbbbbb;
+            border-radius: 9999px;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+            width: 30px;
+            height: 10px;
+            user-select: none;
+            /* Evita la selección de texto en el switch */
+            position: relative;
+            /* Añadido para controlar posición de íconos */
+        }
+
+        .theme-switch.active {
+            background-color: #60a5fa;
+        }
+
+        .theme-switch .icon {
+            font-size: 14px;
+            line-height: 1;
+            display: inline-block;
+            /* Asegura que el icono no cambie de línea al moverse */
+            white-space: nowrap;
+            /* Evita saltos de línea inesperados */
+            pointer-events: none;
+            /* Desactiva eventos de puntero en el icono */
+            position: absolute;
+            /* Añadido para controlar posición de íconos */
+            transition: transform 0.3s ease, left 0.3s ease;
+            /* Añadida transición para movimiento */
+        }
+
+        .theme-switch .icon.moon {
+            left: 0;
+            /* Posición inicial del icono moon */
+            transform: translateX(0);
+        }
+
+        .theme-switch .icon.sun {
+            left: 11px;
+            /* Posición inicial del icono sun */
+            transform: translateX(0);
+        }
+
+        .theme-switch .icon.hidden {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .pointer-hand {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="light-mode font-sans leading-normal tracking-normal">
+
+    <!-- Navigation -->
+    <nav id="nav">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-lg font-semibold">Hotkeys for Devs</a>
+            <div class="flex items-center space-x-4">
+                <div class="theme-switch" id="themeSwitch">
+                    <span class="icon sun" id="sunIcon">&#9728;</span>
+                    <span class="icon moon hidden" id="moonIcon">&#127770;</span>
+                </div>
+                <div>
+                    <a href="#features" class="px-3 py-2 rounded-md text-sm font-medium">Features</a>
+                    <a href="#get-started" class="px-3 py-2 rounded-md text-sm font-medium">Get Started</a>
+                    <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    <a href="#config" class="px-3 py-2 rounded-md text-sm font-medium">Configuration</a>
+                    <a href="#contribute" class="px-3 py-2 rounded-md text-sm font-medium">Contribution</a>
+                    <a href="#license" class="px-3 py-2 rounded-md text-sm font-medium">License</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class=" py-20 px-6">
+        <div class="container mx-auto text-center">
+            <div> </div>
+            <img id="logo-header" src="hotkeys.png" alt="Hotkeys for Devs" class="mx-auto mb-8"
+                style="max-width: 300px;">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Hotkeys, For devs.</h1>
+            <p class="text-lg md:text-xl mb-12">Insert code snippets quickly with customizable hotkeys.</p>
+            <a href="#get-started"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-medium">Get
+                Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="pointer-hand py-16 px-6"
+        href="https://github.com/killyvera/hotkeys?tab=readme-ov-file#-features">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Hotkey Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white light:bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl bg-accent">
+                    <div>
+                        <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
+                            <!-- <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"> -->
+                            <!-- Icon SVG -->
+                            <!-- </svg> -->
+                            📚
+                        </span>
+                    </div>
+                    <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Writes
+                        Customizable Code Snippets: </h3>
+                    <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+                        Easily configure your Code snippets.
+                    </p>
+                </div>
+                <div
+                    class="bg-white light:bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl bg-accent">
+                    <div>
+                        <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
+                            <!-- <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" -->
+                            <!-- viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"> -->
+                            <!-- Icon SVG -->
+                            <!-- </svg> -->
+                            🔥
+                        </span>
+                    </div>
+                    <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Hotkey
+                        Integration:</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+                        Assign hotkeys for quick snippet insertion.
+                    </p>
+                </div>
+                <div
+                    class="bg-white light:bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl bg-accent">
+                    <div>
+                        <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
+                            <!-- <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"> -->
+                            <!-- Icon SVG -->
+                            <!-- </svg> -->
+                            ⚙️
+                        </span>
+                    </div>
+                    <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">System Tray
+                        Integration:</h3>
+                    <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+                        Access configuration and about options from the system tray.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Started Section -->
+    <section id="get-started" class="py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Are you Ready?</h2>
+            <p class="text-lg mb-12">Ready to boost your productivity?</p>
+            <a href="https://github.com/killyvera/hotkeys"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-medium">Github Repository</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Get in touch.</h2>
+            <p class="text-lg mb-12">Have questions or suggestions? We'd love to hear from you!</p>
+            <a href="mailto:david.esmeralda@gmail.com"
+                class="bg-gray-800 text-white py-3 px-6 rounded-lg text-lg font-medium">Contact Email</a>
+        </div>
+    </section>
+
+    <!-- Configuration Section -->
+    <section id="config" class="py-16 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Configuration</h2>
+            <p class="text-lg mb-12">Learn how to customize and set up your hotkeys and snippets.</p>
+            <a href="https://github.com/killyvera/hotkeys?tab=readme-ov-file#%EF%B8%8F-configuration"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-medium">Explore
+                Configuration</a>
+        </div>
+    </section>
+
+    <!-- Contribution Section -->
+    <section id="contribute" class="py-16 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contribution</h2>
+            <p class="text-lg mb-12">Join our open-source community and contribute to the project.</p>
+            <a href="#get-started"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-medium">Get
+                Involved</a>
+        </div>
+    </section>
+
+    <!-- License Section -->
+    <section id="license" class=" py-16 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">License</h2>
+            <p class="text-lg mb-12">This project is licensed under the MIT License.</p>
+            <a href="https://github.com/killyvera/hotkeys/edit/main/LICENSE"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-medium">Read
+                License</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=" py-6 text-center">
+        <div class="container mx-auto">
+            <p>2024 Hotkeys for Devs.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for theme switching -->
+    <script>
+        const themeSwitch = document.querySelector('.theme-switch');
+        const sunIcon = document.querySelector('#sunIcon');
+        const moonIcon = document.querySelector('#moonIcon');
+
+        themeSwitch.addEventListener('click', function () {
+            this.classList.toggle('active');
+            sunIcon.classList.toggle('hidden');
+            moonIcon.classList.toggle('hidden');
+            document.body.classList.toggle('light-mode');
+            document.body.classList.toggle('dark-mode');
+
+            // Save theme preference to localStorage
+            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        });
+
+        // Check localStorage for theme preference
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            themeSwitch.classList.add('active');
+            sunIcon.classList.add('hidden');
+            moonIcon.classList.remove('hidden');
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.add('light-mode');
+        }
+
+        const features = document.getElementById('features')
+        features.addEventListener('click', (event) => {
+            url = 'https://github.com/killyvera/hotkeys?tab=readme-ov-file#-features'
+            event.preventDefault();
+            window.location.href = url;
+        });
+
+    </script>
+
+</body>
+
+</html>
