@@ -1,6 +1,6 @@
 # 🌟 Hotkeys for Devs 🌟
 <p align="center">
-  <img onclick="()=>(window.location.href('https://hotkeysfordevs.netlify.app/') )" src="hotkeys.png" alt="Hotkeys for Devs Logo" width="auto">
+  <img src="hotkeys.png" alt="Hotkeys for Devs Logo" width="auto">
 </p>
 
 Welcome to **Hotkeys for Devs** - an efficient and customizable desktop application designed to help developers quickly insert custom snippets using hotkeys. 🚀
