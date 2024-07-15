@@ -43,7 +43,7 @@ Welcome to **Hotkeys for Devs** - an efficient and customizable desktop applicat
     - Use Ctrl + Alt + Num|0-9| to use your custom text snippets.
 
 <p align="center">
-  <img src="hotkeys_screen_00.jpg" alt="Hotkeys Config Window" width="auto">
+  <img src="hotkeys_screen_00.jpg" alt="Hotkeys Config Window" width="220px">
 </p>
 
 ## ⚙️ Configuration
